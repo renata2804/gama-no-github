@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box ;
+    /*color: #a09038;*/
+    color: rgb(169, 191, 240);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+    /*background-image: url(./Imagens/pexels-stein-egil-liland-3374210.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;*/
+    
+    background: url(./Imagens/pexels-stein-egil-liland-3374210.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    /*background: linear-gradient(90deg, #159957, #155799);
+
+    background-image: linear-gradient(90deg, #0a0512, #242b3b, #345167, #3e7c90, #4fa9b2, #53b1b2, #5bb9b1, #66c1ae, #4fa697, #398b80, #227269, #065953);*/
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    /*font-size: 15px;*/
+    /*font-style: italic;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+#logo img {
+    max-width: 130px;
+}
+
+.flex li a img {
+    max-width: 50px;
+    padding: 5px;
+}
+
+.container #minhafoto img {
+    width: 15%;
+}
+
+.container .name h1 {
+    color: lightseagreen;
+    font-size: 40px;
+}
+
+.container .name h5 {
+    color: lightcyan;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor:pointer;
+    animation: animation: blink 2s steps(5,start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform:rotate(180deg);
+    transition:300ms;
+}
+.active{
+    display:block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    margin-left: 60px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form p{
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    padding: 5px 10px;
+    padding: 5px 10px;
+    color: #464646;
+    font-weight: 600;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.form button {
+    width:15%;
+    padding: 5px 10px;
+    background-color: lightseagreen;
+    color: #464646;
+    font-weight: 600;
+    border: none;
+    cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+    margin-left:-4px;
+    margin-top:10px;
+}
